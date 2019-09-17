@@ -26,7 +26,7 @@
 ---
 
 1. Dentro de VS Code buscaremos la seccion de extenciones.
----
+
 El cual tiene el siguiente icono.![7.png](https://github.com/PhantompD/OOP/blob/master/Setup/7.png "Logo Title Text 1")
 ![6.png](https://github.com/PhantompD/OOP/blob/master/Setup/6.png) 
 
