@@ -17,3 +17,17 @@
 1. Buscamos en nuestro buscador de preferencia "Visual Studio Code" y entraremos a la primera pagina en aparecer.
 2. Una vez dentro en la pagina aparecera la opción de descarga del programa en nuestro SO.
 ![4.png](https://github.com/PhantompD/OOP/blob/master/Setup/4.png) 
+
+3. Despues de descargarlo deberia aparecer en nuestra carpeta de descargar y de ahi lo ejecutaremos.
+![5.png](https://github.com/PhantompD/OOP/blob/master/Setup/5.png) 
+
+---
+#  Configuración de Visual Studio Code
+---
+
+1. Dentro de VS Code buscaremos la seccion de extenciones.
+---
+El cual tiene el siguiente icono.![7.png](https://github.com/PhantompD/OOP/blob/master/Setup/7.png "Logo Title Text 1")
+![6.png](https://github.com/PhantompD/OOP/blob/master/Setup/6.png) 
+
+
