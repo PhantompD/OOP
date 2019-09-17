@@ -10,6 +10,7 @@ private int Año;
 //private string pais;
 //private string director;
 
+
 //Constructor #1
 Peli(){}
 
@@ -54,7 +55,16 @@ static void Main(){
     p1.SetAño(2016); 
     p1.Imprime();
    
-
+/*List<Peli> peliculas = new List<Peli>();
+			peliculas.Add(new Peli("Birdman", 2018));
+            peliculas.Add(new Peli("Shrek", 2002));
+            peliculas.Add(new Peli("Avengers", 2012));
+            peliculas.Add(new Peli("Toy Story", 2019));
+            peliculas.Add(new Peli("Bohemian Rhapsody", 2018));
+            foreach(Peli p in peliculas)
+            {
+               Console.WriteLine(p);           
+            }*/
 
 
 
