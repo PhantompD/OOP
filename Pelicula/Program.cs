@@ -10,6 +10,8 @@ private int Año;
 //private string pais;
 //private string director;
 
+ private List<Actor> actores = new List<Actor>();
+
 
 //Constructor #1
 Peli(){}
@@ -47,14 +49,33 @@ public void Imprime()
 
 }
 
+public void AgregarActor(Actor actor)
+        {
+            actores.Add(actor);
+        }
+
+        public void imprime() 
+        {
+			Console.WriteLine("actores de pelicula {0}. {1} ", Titulo, Año);
+            foreach(Actor a in actores)
+            {
+                Console.WriteLine("{0}, {1}", a.nombre, a.año);
+            }
+		}
+
 static void Main(){
 
+Peli p1 = new Peli("Spiderman", 2012);
+			p1.AgregarActor(new Actor("Andrew Garfield", 1983));
+			p1.AgregarActor(new Actor("Emma Stone", 1988));
 
-    Peli p1 = new Peli();
+			p1.imprime();
+
+    /* Peli p1 = new Peli();
     p1.SetTitulo("La La Land");
     p1.SetAño(2016); 
-    p1.Imprime();
-   
+    p1.Imprime();*/
+
 /*List<Peli> peliculas = new List<Peli>();
 			peliculas.Add(new Peli("Birdman", 2018));
             peliculas.Add(new Peli("Shrek", 2002));
@@ -80,6 +101,16 @@ static void Main(){
 
 }
 
+class Actor
+    {
+        public string nombre;
+        public Int16 año;
+        public Actor(String nombre, Int16 año)
+        {
+            this.nombre = nombre;
+            this.año = año;
+        }
+    }
 
 
 }
