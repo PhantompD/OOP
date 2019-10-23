@@ -46,11 +46,12 @@ namespace Tiempo
 
         static void Main(string[] args)
         {
+
             Duracion a = new Duracion (2,10,5);
             Duracion b = new Duracion(0, 0, 7200);
             a.print();
             b.Conv();
-
+            //restaS
         }
     }
 }
