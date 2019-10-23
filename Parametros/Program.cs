@@ -31,10 +31,15 @@ namespace Parametros
 		return a + b;
 	}
 
+     class Resta
+     {
+       
+       public void resul(in int c) 
+       {
 
-        
-        
-        
+       }
+	 }
+
         
         static void Main(string[] args)
         {
@@ -60,6 +65,17 @@ namespace Parametros
              Console.WriteLine("Suma de 10 + 15 usando");
             Console.WriteLine("Pase de parametros: " + r);
 		    Console.WriteLine("Pase de parametros por out: " + suma(num1,num2) );
+
+            Console.WriteLine("/////"); //Espacio
+
+            //Parametros por in
+
+            Console.WriteLine("Usando in");
+            Resta y = new Resta();
+            int n = 2;
+            n=n-1;
+            y.resul(in n);
+            Console.WriteLine(n);
 		
 
         }
