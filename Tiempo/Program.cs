@@ -24,6 +24,21 @@ namespace Tiempo
             Console.WriteLine("Horas:{0}", Horas + (Minutos/60) + (Segundos/3600));
 
            }
+            
+
+            public void Conv()
+            {
+                double sobra = Segundos % 3600;
+                double Hrs = 0;              
+
+                while(Segundos > 3600)
+                {
+                    Segundos = Segundos - 3600;
+                    Hrs = Hrs + 1;
+                }
+
+                Console.WriteLine("Hora: {0}:{1}:{2}", Hrs, "0", sobra);
+            }
 
 
 
@@ -32,7 +47,10 @@ namespace Tiempo
         static void Main(string[] args)
         {
             Duracion a = new Duracion (2,10,5);
+            Duracion b = new Duracion(0, 0, 7200);
             a.print();
+            b.Conv();
+
         }
     }
 }
