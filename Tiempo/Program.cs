@@ -7,11 +7,11 @@ namespace Tiempo
         class Duracion
         {
 
-          public double Horas;
-          public double Minutos;
-          public double Segundos;
+          public int Horas;
+          public int Minutos;
+          public int Segundos;
 
-          public Duracion (double H, double M, double S)
+          public Duracion (int H, int M, int S)
           {
             Horas=H;
             Minutos=M;
@@ -28,8 +28,9 @@ namespace Tiempo
 
             public void Conv()
             {
-                double sobra = Segundos % 3600;
-                double Hrs = 0;              
+                int sobra = Segundos % 3600;
+                int Hrs = 0; 
+                int Min = 0;              
 
                 while(Segundos > 3600)
                 {
@@ -37,8 +38,28 @@ namespace Tiempo
                     Hrs = Hrs + 1;
                 }
 
-                Console.WriteLine("Hora: {0}:{1}:{2}", Hrs, "0", sobra);
+
+                while(sobra > 60)
+                {
+                  sobra = sobra - 60;
+                  Min = Min + 1;
+                }
+
+                Horas = Hrs;
+                Minutos = Min;
+
+                Console.WriteLine("Hora: {0}:{1}:{2}", Horas, Min, sobra);
+               
             }
+
+              public static int operator +(Duracion c, Duracion a)
+          {
+               
+              return ( (a.Horas + c.Horas) * 3600 + (a.Minutos + c.Minutos) * 60 + a.Segundos + c.Segundos);
+          }
+
+          
+          
 
 
 
@@ -48,10 +69,13 @@ namespace Tiempo
         {
 
             Duracion a = new Duracion (2,10,5);
-            Duracion b = new Duracion(0, 0, 7200);
+            Duracion b = new Duracion(0, 0, 7300);
+            Duracion c = new Duracion(3, 3, 20);          
             a.print();
             b.Conv();
-            //restaS
+            Console.WriteLine(a + c);
+            
+            
         }
     }
 }
