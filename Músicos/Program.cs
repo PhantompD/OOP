@@ -23,6 +23,12 @@ namespace Músicos
           Console.WriteLine("Hola soy {0}", nombre);
       }
 
+       public virtual void Toca()
+      {
+          Console.WriteLine("Toca su instrumento");
+      }
+
+
     }
 
     class Bajista : Músico 
@@ -42,6 +48,11 @@ namespace Músicos
         public override void Saludo()
         {
             Console.WriteLine("Hola soy {0} y soy bajista", nombre);
+        }
+
+        public override void Toca()
+        {
+            Console.WriteLine("Empieza a tocar su {0}", bajo);
         }
     }
 
@@ -63,6 +74,11 @@ namespace Músicos
         {
             Console.WriteLine("Hola soy {0} y soy baterista", nombre);
         }
+
+        public override void Toca()
+        {
+            Console.WriteLine("Empieza a tocar su {0}", bateria);
+        }
     }
     
     class Guitarrista : Músico 
@@ -83,6 +99,11 @@ namespace Músicos
         {
             Console.WriteLine("Hola soy {0} y soy guitarrista", nombre);
         }
+
+        public override void Toca()
+        {
+            Console.WriteLine("Empieza a tocar su {0}", guitarra);
+        }
     }
     
     
@@ -96,6 +117,8 @@ namespace Músicos
             Baterista c = new Baterista ("Roy", "Batt");
             Guitarrista a = new Guitarrista ("Ned", "Del Olo");
 
+           
+
             List<Músico> grupo = new List <Músico>();
             grupo.Add(a);
             grupo.Add(b);
@@ -105,8 +128,10 @@ namespace Músicos
             {
                 m.Saludo();
                 m.Afina();
+                m.Toca();
+                Console.WriteLine("////////");
             }
-
+         
 
         }
     }

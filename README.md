@@ -14,5 +14,5 @@ Evidencias de curso de Programación.
 6. [ Domino ](https://github.com/PhantompD/OOP/blob/master/Domino/Program.cs)
 7. [ Tiempo ](https://github.com/PhantompD/OOP/blob/master/Tiempo/Program.cs)
 8. [ Músicos y ](https://github.com/PhantompD/OOP/blob/master/M%C3%BAsicos/Program.cs)[ Alumnos ](https://github.com/PhantompD/OOP/blob/master/Alumnos/Program.cs)
-9. [ Abstractas ](https://github.com/PhantompD/OOP/blob/master/Publicaci%C3%B3n/Program.cs)
+9. [ Ilustrador ](https://github.com/PhantompD/OOP/blob/master/Publicaci%C3%B3n/Program.cs)
 10. [ Publicación ](https://github.com/PhantompD/OOP/blob/master/Publicaci%C3%B3n/Program.cs)
