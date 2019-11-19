@@ -55,8 +55,26 @@ namespace Stock
             throw new InvalidOperationException("Error");
          }
      }
+
+
+     /*public T Cola()
+     {
+         apuntador--;
+        
+         if(apuntador >= 0)
+         {
+           return elementos[apuntador];
+         }
+         
+         else
+         {
+            apuntador = 0;
+            throw new InvalidOperationException("Error");
+         }
+     }
+
     
-    }
+    }*/
 
     
     class Program
@@ -70,7 +88,8 @@ namespace Stock
             elementos.Push(4);
             elementos.Push(10);
             elementos.Push(15);
-          
+        
+            Console.WriteLine("Elementos de la pila");
             Console.WriteLine(elementos.Pop());
             Console.WriteLine(elementos.Pop());
             Console.WriteLine(elementos.Pop());
