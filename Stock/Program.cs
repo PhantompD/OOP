@@ -3,7 +3,7 @@
 namespace Stock
 {
     
-    class Stock<T>
+    class Stocks<T>
     {
        
      public T[] elementos;
@@ -11,12 +11,12 @@ namespace Stock
      public int apuntador = 0;
     
     
-     public Stock():this(100)
+     public Stocks():this(100)
      {
          
      }
     
-       public Stock(int size)
+       public Stocks(int size)
      {
          max_size = size;
          elementos = new T[max_size];
@@ -46,7 +46,7 @@ namespace Stock
         
          if(apuntador >= 0)
          {
-           return elementos[apuntador_pila];
+           return elementos[apuntador];
          }
          
          else
@@ -56,11 +56,25 @@ namespace Stock
          }
      }
     
+    }
+
     
     class Program
     {
         static void Main(string[] args)
         {
+            
+            Stocks <int> elementos = new Stocks <int> (4); 
+            
+            elementos.Push(1);
+            elementos.Push(4);
+            elementos.Push(10);
+            elementos.Push(15);
+          
+            Console.WriteLine(elementos.Pop());
+            Console.WriteLine(elementos.Pop());
+            Console.WriteLine(elementos.Pop());
+            Console.WriteLine(elementos.Pop());
             
         }
     }
