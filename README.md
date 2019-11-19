@@ -16,3 +16,4 @@ Evidencias de curso de Programación.
 8. [ Músicos y ](https://github.com/PhantompD/OOP/blob/master/M%C3%BAsicos/Program.cs)[ Alumnos ](https://github.com/PhantompD/OOP/blob/master/Alumnos/Program.cs)
 9. [ Ilustrador ](https://github.com/PhantompD/OOP/blob/master/Ilustrador/Program.cs)
 10. [ Publicación ](https://github.com/PhantompD/OOP/blob/master/Publicaci%C3%B3n/Program.cs)
+11. [ Stock ](https://github.com/PhantompD/OOP/blob/master/Stock/Program.cs)
