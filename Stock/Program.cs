@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Stock
 {
@@ -56,25 +57,7 @@ namespace Stock
          }
      }
 
-
-     /*public T Cola()
-     {
-         apuntador--;
-        
-         if(apuntador >= 0)
-         {
-           return elementos[apuntador];
-         }
-         
-         else
-         {
-            apuntador = 0;
-            throw new InvalidOperationException("Error");
-         }
      }
-
-    
-    }*/
 
     
     class Program
@@ -94,6 +77,33 @@ namespace Stock
             Console.WriteLine(elementos.Pop());
             Console.WriteLine(elementos.Pop());
             Console.WriteLine(elementos.Pop());
+
+            //Cola
+
+            string Nombre;
+         
+            Queue Cola =new Queue();
+
+            Cola.Enqueue("Carlos  \n");
+            Cola.Enqueue("Raul  \n");
+            Cola.Enqueue("Daniel  \n");
+            Cola.Enqueue("Fer");
+
+            Console.WriteLine("/////////////////");
+            Console.WriteLine("Elementos de la Cola");
+            
+            for(int i=0;i<4;i++)
+            {
+        
+         Nombre=(string) Cola.Dequeue();
+         
+         Console.Write(Nombre);
+        
+         
+            }
+
+
+
             
         }
     }
